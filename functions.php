@@ -79,6 +79,16 @@ collect(['setup', 'filters'])
 add_theme_support('sage');
 
 add_action( 'init', 'register_acf_blocks' );
+
 function register_acf_blocks() {
     register_block_type( __DIR__ . '/blocks/restaurant' );
-}
+};
+
+
+function register_acf_hero_bg_image() {
+    register_block_type( __DIR__ . '/blocks/hero-bg-image' );
+};
+
+add_action( 'init', 'register_acf_hero_bg_image' );
+
+

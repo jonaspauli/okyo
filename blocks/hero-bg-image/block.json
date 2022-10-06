@@ -1,0 +1,14 @@
+{
+    "name": "hero-bg-image",
+    "title": "Hero mit Hintergrundbild",
+    "description": "Hintergrundbild mit Text",
+    "style": [ "file:../../resources/styles/blocks/hero-bg-image.css" ],
+    "category": "media",
+    "icon": "users",
+    "keywords": ["hero", "logo", "okyo"],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "../../resources/views/blocks/hero-bg-image.php"
+    },
+    "align": "full"
+}

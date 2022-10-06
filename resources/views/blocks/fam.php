@@ -32,18 +32,22 @@ if ( ! empty( $block['align'] ) ) {
 // Check rows existexists.
 if( have_rows('fam') ): ?>
     <section> 
-        <div class="flex overflow-x-scroll hide-scroll-bar">
-   <?php while( have_rows('fam') ) : the_row();
-    $image = get_sub_field('bild')
-        ?>
-        <div class="inline-block px-3">
-        <div class="w-96">
-            <?php echo wp_get_attachment_image( $image, 'full' ); ?>
-            <p><?php the_sub_field('name'); ?></p>
-            <p><?php the_sub_field('position'); ?></p>
-        </div>
-        </div>
-    <?php endwhile; ?>
+        <div class="sticky-container">
+            <main class="flex overflow-x-hidden hide-scroll-bar sticky top-40">
+    <?php while( have_rows('fam') ) : the_row();
+            $image = get_sub_field('bild')
+                ?>
+                <div class="inline-block px-3">
+                <div class="w-96">
+                <?php if( !empty( $image ) ): ?>
+                    <img class="object-cover h-96 w-96" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
+                <?php endif; ?>
+                    <p><?php the_sub_field('name'); ?></p>
+                    <p><?php the_sub_field('position'); ?></p>
+                </div>
+                </div>
+        <?php endwhile; ?>
+    </main>
     </div>
     </section>
 
