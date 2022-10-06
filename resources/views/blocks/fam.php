@@ -27,4 +27,25 @@ if ( ! empty( $block['align'] ) ) {
 }
 ?>
 
-<p>Test fam block</p>
+<?php
+
+// Check rows existexists.
+if( have_rows('fam') ): ?>
+    <section> 
+        <div class="flex overflow-x-scroll hide-scroll-bar">
+   <?php while( have_rows('fam') ) : the_row();
+    $image = get_sub_field('bild')
+        ?>
+        <div class="inline-block px-3">
+        <div class="w-96">
+            <?php echo wp_get_attachment_image( $image, 'full' ); ?>
+            <p><?php the_sub_field('name'); ?></p>
+            <p><?php the_sub_field('position'); ?></p>
+        </div>
+        </div>
+    <?php endwhile; ?>
+    </div>
+    </section>
+
+<?php else :  ?>
+<?php endif; ?>

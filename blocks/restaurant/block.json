@@ -2,13 +2,13 @@
     "name": "okyo-fam",
     "title": "OKYO Fam",
     "description": "Template für Mitarbeiter",
-    "style": [ "file:.~@styles/blocks/fam.css" ],
+    "style": [ "file:../../resources/styles/blocks/fam.css" ],
     "category": "media",
     "icon": "users",
     "keywords": ["okyo", "fam", "mitarbeiter"],
     "acf": {
         "mode": "preview",
-        "renderTemplate": "views/blocks/fam.php"
+        "renderTemplate": "../../resources/views/blocks/fam.php"
     },
     "align": "full"
 }
