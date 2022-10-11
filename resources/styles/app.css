@@ -1,6 +1,7 @@
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
+@import "@marcreichel/apple-tv-card/dist/main.css";
 
 @font-face {
   font-family: "Spartan";
@@ -44,4 +45,8 @@
   position: relative;
   text-align: center;
   }
+}
+
+.apple-tv-card-container > .apple-tv-card.hover, .apple-tv-card-container > .apple-tv-card:focus-within {
+  box-shadow: 0 0 2rem .25rem rgba(255,184,0,.8) !important;
 }

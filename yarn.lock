@@ -1374,6 +1374,11 @@
     "@jridgewell/resolve-uri" "^3.0.3"
     "@jridgewell/sourcemap-codec" "^1.4.10"
 
+"@marcreichel/apple-tv-card@^1.0.2":
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/@marcreichel/apple-tv-card/-/apple-tv-card-1.0.2.tgz#50316ef3dd88b7bde40096ab42e62d5356d5a303"
+  integrity sha512-ZNh8OGwL6ahBkq6is4xpQhV4ynQCe9GjDlwhw2qQuoTo9tyXDqL6X9jmhCZXPm0N2otQKix9H459wi/pdWTnIw==
+
 "@nodelib/fs.scandir@2.1.5":
   version "2.1.5"
   resolved "https://registry.npmjs.org/@nodelib/fs.scandir/-/fs.scandir-2.1.5.tgz"

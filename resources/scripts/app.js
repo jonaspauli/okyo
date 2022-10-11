@@ -68,3 +68,5 @@ import.meta.webpackHot?.accept(main);
       }
   }
 })();
+
+require('@marcreichel/apple-tv-card');
