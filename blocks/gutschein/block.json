@@ -1,0 +1,14 @@
+{
+    "name": "gutschein",
+    "title": "Gutschein",
+    "description": "Gutschein Template",
+    "style": [ "file:../../resources/styles/blocks/gutschein.css" ],
+    "category": "media",
+    "icon": "users",
+    "keywords": ["okyo", "gutschein"],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "../../resources/views/blocks/gutschein.php"
+    },
+    "align": "full"
+}

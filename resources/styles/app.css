@@ -33,3 +33,15 @@
   font-style: normal;
   font-display: block;
 }
+
+@layer base {
+  h2 {
+  font-size: 10rem;
+  letter-spacing: -0.75rem;
+  font-weight: 500;
+  margin-bottom: -7rem;
+  z-index: 100;
+  position: relative;
+  text-align: center;
+  }
+}
