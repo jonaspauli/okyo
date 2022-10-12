@@ -1,3 +1,4 @@
+
 module.exports = {
   content: ["./index.php", "./app/**/*.php", "./resources/**/*.{php,vue,js}"],
   theme: {
@@ -13,10 +14,12 @@ module.exports = {
       sans: ['Spartan', 'sans-serif'],
     },
     extend: {
-      backgroundImage: {
-        'logo': "url('~@images/logo_hero.svg')",
+      spacing: {
+        '75vh': '75vh',
       }
     },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/forms'),
+  ],
 }
 }

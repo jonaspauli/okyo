@@ -1,6 +1,6 @@
 <?php
 /**
- * OKYO Fam Block Template.
+ * OKYO Textband Template.
  *
  * @param   array $block The block settings and attributes.
  * @param   string $content The block inner HTML (empty).
@@ -18,7 +18,7 @@ if ( ! empty( $block['anchor'] ) ) {
 }
 
 // Create class attribute allowing for custom "className" and "align" values.
-$class_name = 'okyo-fam';
+$class_name = 'textband';
 if ( ! empty( $block['className'] ) ) {
     $class_name .= ' ' . $block['className'];
 }
@@ -27,31 +27,14 @@ if ( ! empty( $block['align'] ) ) {
 }
 ?>
 
-<?php
-
-// Check rows existexists.
-if( have_rows('fam') ): ?>
-    <section> 
+<section> 
         <div class="sticky-container">
             <main class="flex overflow-x-hidden hide-scroll-bar sticky top-40">
-    <?php while( have_rows('fam') ) : the_row();
-            $image = get_sub_field('bild')
-                ?>
-                <div class="inline-block px-3">
-                    <div class="w-75vh">
-                    <?php if( !empty( $image ) ): ?>
-                        <img class="object-cover h-75vh w-75vh" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
-                    <?php endif; ?>
-                        <div class="pt-4">
-                            <p><?php the_sub_field('name'); ?></p>
-                            <p><?php the_sub_field('position'); ?></p>
-                        </div>
-                    </div>
-                </div>
-        <?php endwhile; ?>
-    </main>
+            <?php 
+            $link = get_field('link');
+            if( $link ): ?>
+                <a href="<?php echo esc_url( $link ); ?>"><p class="text-9xl"><span><?php the_field('text'); ?></span><span><?php the_field('text'); ?></span></p></a>
+            <?php endif; ?>
+            </main>
     </div>
     </section>
-
-<?php else :  ?>
-<?php endif; ?>

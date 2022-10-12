@@ -84,4 +84,5 @@ function register_acf_blocks() {
     register_block_type( __DIR__ . '/blocks/restaurant' );
     register_block_type( __DIR__ . '/blocks/hero-bg-image' );
     register_block_type( __DIR__ . '/blocks/gutschein' );
+    register_block_type( __DIR__ . '/blocks/textband' );
 };

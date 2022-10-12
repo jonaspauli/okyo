@@ -1,0 +1,14 @@
+{
+    "name": "textband",
+    "title": "Textband",
+    "description": "Fancy Textband Scroll",
+    "style": [ "file:../../resources/styles/blocks/textband.css" ],
+    "category": "media",
+    "icon": "users",
+    "keywords": ["okyo", "fam", "mitarbeiter"],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "../../resources/views/blocks/textband.php"
+    },
+    "align": "full"
+}
