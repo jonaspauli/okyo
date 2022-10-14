@@ -36,13 +36,39 @@
 }
 
 @layer base {
+  :root {
+    --okyo-black: 15 11 0;
+  }
+  body {
+    background-color: --okyo-black;
+  }
+  h1 {
+    font-size: 10rem;
+    letter-spacing: -0.75rem;
+    font-weight: 500;
+    position: relative;
+    text-align: center;
+  }
   h2 {
-  font-size: 10rem;
-  letter-spacing: -0.75rem;
-  font-weight: 500;
-  margin-bottom: -7rem;
-  z-index: 100;
-  position: relative;
-  text-align: center;
+    font-size: 7.5rem;
+    letter-spacing: -0.5rem;
+    font-weight: 500;
+    margin-bottom: -7rem;
+    z-index: 100;
+    position: relative;
+    text-align: center;
+  }
+  h3 {
+    font-size: 5rem;
+    letter-spacing: -0.33rem;
+    font-weight: 600;
+    position: relative;
+    text-align: center;
+  }
+  h4 {
+    font-size: 1.25rem;
+    letter-spacing: -0.1rem;
+    font-weight: 600;
+    position: relative;
   }
 }

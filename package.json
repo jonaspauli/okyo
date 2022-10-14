@@ -27,6 +27,8 @@
     "tailwindcss": "^3.1.8"
   },
   "dependencies": {
-    "@marcreichel/apple-tv-card": "^1.0.2"
+    "@marcreichel/apple-tv-card": "^1.0.2",
+    "gsap": "^3.11.3",
+    "jquery": "^3.6.1"
   }
 }
