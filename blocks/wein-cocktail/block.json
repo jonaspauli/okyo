@@ -1,0 +1,14 @@
+{
+    "name": "Cocktail - Wein des Monats",
+    "title": "Wein-Cocktail",
+    "description": "Der Cocktail und Wein des Monats",
+    "style": [ "file:../../resources/styles/blocks/wein-cocktail.css" ],
+    "category": "media",
+    "icon": "users",
+    "keywords": ["okyo", "wein", "cocktal"],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "../../resources/views/blocks/wein-cocktail.php"
+    },
+    "align": "full"
+}

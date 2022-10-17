@@ -6,6 +6,7 @@ module.exports = {
       'okyo-orange' : '#FFB800',
       'okyo-black' : '#0F0B00',
       'okyo-white' : '#F3F1EC',
+      'okyo-tinted' : '#44300B', 
     },
     container: {
       center: true,
@@ -16,6 +17,7 @@ module.exports = {
     extend: {
       spacing: {
         '75vh': '75vh',
+        '128': '32rem',
       }
     },
   plugins: [
