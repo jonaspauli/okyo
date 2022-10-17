@@ -1,0 +1,14 @@
+{
+    "name": "special-drinks",
+    "title": "Special Drinks",
+    "description": "Special Drinks Template",
+    "style": [ "file:../../resources/styles/blocks/special-drinks.css" ],
+    "category": "media",
+    "icon": "users",
+    "keywords": ["okyo", "fam", "mitarbeiter"],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "../../resources/views/blocks/special-drinks.php"
+    },
+    "align": "full"
+}

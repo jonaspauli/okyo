@@ -87,6 +87,8 @@ function register_acf_blocks() {
     register_block_type( __DIR__ . '/blocks/textband' );
     register_block_type( __DIR__ . '/blocks/wein-cocktail' );
     register_block_type( __DIR__ . '/blocks/quote' );
+    register_block_type( __DIR__ . '/blocks/special-drinks' );
+
 
 
 };
