@@ -1,6 +1,6 @@
 <?php
 /**
- * OKYO Textband Template.
+ * OKYO Wein / Cocktail Template.
  *
  * @param   array $block The block settings and attributes.
  * @param   string $content The block inner HTML (empty).

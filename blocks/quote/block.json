@@ -1,0 +1,14 @@
+{
+    "name": "quote",
+    "title": "Zitat",
+    "description": "Template für Zitate",
+    "style": [ "file:../../resources/styles/blocks/quote.css" ],
+    "category": "media",
+    "icon": "users",
+    "keywords": ["okyo", "quote", "Zitate"],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "../../resources/views/blocks/quote.php"
+    },
+    "align": "full"
+}
