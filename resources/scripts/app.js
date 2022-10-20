@@ -84,7 +84,7 @@ require('@marcreichel/apple-tv-card');
 // Textband
 
 $(document).ready(function() {
-    var containers = $('.container');
+    var containers = $('.textband');
 
     if (containers.length) {
         containers.each(function() {

@@ -7,17 +7,18 @@
 @section('content')
   @while(have_posts()) @php(the_post())
     @include('partials.page-header')
-<table class="mx-auto">
+    <h1><?php the_field('headline') ?></h1>
+<table class="mx-auto mb-20 mt-10">
   <?php
 // Check rows existexists.
 if( have_rows('karte') ): ?>
     <?php while( have_rows('karte') ) : the_row(); ?>
     <tr>
 
-        <td>
+        <td class="text-3xl font-semibold py-2 pr-10">
           <?php the_sub_field('name'); ?>
         </td> 
-        <td>
+        <td class="text-lg py-2">
           <?php the_sub_field('uhrzeit'); ?>
         </td> 
 
@@ -31,32 +32,34 @@ endif;
 
 ?>
 </table>
-
 <?php
 // Check rows existexists.
 if( have_rows('karte') ): ?>
     <?php while( have_rows('karte') ) : the_row(); ?>
-          <h3><?php the_sub_field('name'); ?></h3>
+          <h3 class="m-[-1.75rem]"><?php the_sub_field('name'); ?></h3>
           <h4 class="text-center"><?php the_sub_field('uhrzeit'); ?></h4>
           <?php
               // Check rows existexists.
               if( have_rows('gang') ): ?>
                   <?php while( have_rows('gang') ) : the_row(); ?>
+                  <div class="container mt-20">
                   <div class="flex flex-row">
-                  <div class="basis-1/4"><h4><?php the_sub_field('name'); ?></h4></div>
-                  <div class="basis-3/4">
+                    <div class="basis-1/4">
+                      <h4 class="uppercase tracking-wide"><?php the_sub_field('name'); ?></h4>
+                    </div>
+                    <div class="basis-3/4">
 
                         <?php
                             // Check rows existexists.
                             if( have_rows('gericht') ): ?>
                                 <?php while( have_rows('gericht') ) : the_row(); ?>
-                                  <div class="flex flex-row">
+                                  <div class="flex flex-row mb-10">
                                     <div class="basis-3/4">
-                                      <p class="font-semibold text-3xl"><?php the_sub_field('name'); ?></p>
-                                      <p><?php the_sub_field('zutaten'); ?></p>
+                                      <p class="font-semibold text-3xl mb-3"><?php the_sub_field('name'); ?></p>
+                                      <p class="leading-relaxed"><?php the_sub_field('zutaten'); ?></p>
                                     </div>
                                     <div class="basis-1/4">
-                                      <p><?php the_sub_field('preis'); ?></p>
+                                      <p class="text-right"><?php the_sub_field('preis'); ?></p>
                                     </div>
                                   </div>
                                 <?php endwhile; ?>
@@ -66,10 +69,16 @@ if( have_rows('karte') ): ?>
                             endif; ?>
                            </div>
                            </div>
-                           <?php
+                           </div>
+                          
+                  <?php endwhile; ?>
+              <?php else :
+                  // Do something...
+              endif; ?>
+               <?php
                             $textband = get_field('textband');
                             if( $textband ): ?>
-                            <div class="container" speed=30>
+                            <div class="textband my-40" speed=30>
                               <div class='scrolling-text'>
                                 <a href="<?php echo esc_url( $textband['link']['url'] ); ?>" class="scrolling-text-content"><span><?php echo $textband['text']; ?></span></h2></a>
                               </div>
@@ -77,7 +86,7 @@ if( have_rows('karte') ): ?>
                                 
                                 <style type="text/css">
                                 
-                                  .container {
+                                  .textband {
                                     position: relative;
                                     width: 100vw;
                                     overflow: hidden;
@@ -101,13 +110,8 @@ if( have_rows('karte') ): ?>
 
                                 </style>
                             <?php endif; ?>
-                  <?php endwhile; ?>
-              <?php else :
-                  // Do something...
-              endif;
-
-              ?>
     <?php endwhile; ?>
+    
 <?php else :
     // Do something...
 endif;

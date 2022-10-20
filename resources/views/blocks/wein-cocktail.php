@@ -29,15 +29,15 @@ if ( ! empty( $block['align'] ) ) {
 <?php
 $cocktail = get_field('cocktail');
 if( $cocktail ): ?>
-<section class="flex flex-row justify-center">
+<section class="flex flex-row justify-center mt-[-5rem]">
     <div class="flex flex-col cocktail">
         <div class="flip-card w-128 h-128">
         <div class="flip-card-inner ">
             <div class="flip-card-front">
             <img src="<?php echo esc_url( $cocktail['image']['url'] ); ?>" alt="<?php echo esc_url( $cocktail['image']['alt'] ); ?>">
             </div>
-            <div class="flip-card-back bg-okyo-tinted justify-center items-center flex text-left p-12">
-            <p> <?php echo $cocktail['beschreibung']; ?></p>
+            <div class="flip-card-back bg-okyo-tinted justify-center leading-loose items-center flex text-left p-12 text-center">
+            <?php echo $cocktail['beschreibung']; ?>
             </div>
         </div>
         </div> 
@@ -57,8 +57,8 @@ if( $wein ): ?>
             <div class="flip-card-front">
             <img src="<?php echo esc_url( $wein['image']['url'] ); ?>" alt="<?php echo esc_url( $wein['image']['alt'] ); ?>">
             </div>
-            <div class="flip-card-back bg-okyo-tinted justify-center items-center flex text-left p-12">
-            <p> <?php echo $wein['beschreibung']; ?></p>
+            <div class="flip-card-back bg-okyo-tinted justify-center items-center flex text-left p-12 leading-loose text-center">
+                <?php echo $wein['beschreibung']; ?>
             </div>
         </div>
         </div> 

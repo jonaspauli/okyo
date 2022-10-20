@@ -28,24 +28,26 @@ if ( ! empty( $block['align'] ) ) {
 ?>
 
 <?php if( have_rows('cocktail') ): ?>
-<section class="grid container grid-cols-2 justify-center">
+<section class="grid container overflow-visible grid-cols-2 justify-center">
 
 <?php while( have_rows('cocktail') ): the_row(); 
         $image = get_sub_field('image');
         ?>
-        <div class="flex flex-col cocktail">
-            <div class="flip-card w-128 h-128">
-                <div class="flip-card-inner ">
-                    <div class="flip-card-front">
-                    <img src="<?php echo esc_url( $image['url'] ); ?>" alt="<?php echo esc_attr($image['alt']); ?>">
+        <div class="flex justify-center items-center mb-10">
+            <div class="flex flex-col">
+                <div class="flip-card w-128 h-128">
+                    <div class="flip-card-inner ">
+                        <div class="flip-card-front">
+                        <img src="<?php echo esc_url( $image['url'] ); ?>" alt="<?php echo esc_attr($image['alt']); ?>">
+                        </div>
+                        <div class="flip-card-back bg-okyo-tinted justify-center text-center leading-loose items-center flex p-12">
+                        <?php echo the_sub_field('beschreibung'); ?>
+                        </div>
                     </div>
-                    <div class="flip-card-back bg-okyo-tinted justify-center items-center flex text-left p-12">
-                    <p> <?php echo the_sub_field('beschreibung'); ?></p>
-                    </div>
+                </div> 
+                <div class="pl-12 pt-6">
+                    <p><?php echo the_sub_field('name'); ?></p>
                 </div>
-            </div> 
-            <div class="pl-12 pt-6">
-                <p><?php echo the_sub_field('name'); ?></p>
             </div>
         </div>
 

@@ -27,7 +27,7 @@ if ( ! empty( $block['align'] ) ) {
 }
 ?>
 
-<div class="container" speed=30>
+<div class="textband my-40 z-10" speed=30>
   <div class='scrolling-text'>
     <?php 
     $link = get_field('link');

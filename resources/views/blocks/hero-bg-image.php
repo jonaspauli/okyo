@@ -29,5 +29,5 @@ if ( ! empty( $block['align'] ) ) {
 
 
 <section class="grid place-content-center mx-auto h-96 text-okyo-white font-sans font-normal bg-no-repeat bg-center bg-[length:340px]" style="background-image: url(<?php the_field('bg-image'); ?>)">
-      <h1 class="text-center text-3xl"><?php the_field('text'); ?></h1>
+      <h1 class="text-center text-3xl tracking-normal"><?php the_field('text'); ?></h1>
     </section>

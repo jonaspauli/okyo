@@ -35,8 +35,8 @@ if ( ! empty( $block['align'] ) ) {
         ?>
 <a href="<?php echo esc_url( $link_url ); ?>" target="<?php echo esc_attr( $link_target ); ?>">
 
-    <div class="container grid place-items-center">
-        <div class="w-full">
+    <div class="grid place-items-center">
+        <div class="w-8/12">
             <div class="apple-tv-card-container" style="width:100%;">
                 <div class="apple-tv-card">
                     <div class="content" style="background-image:url(<?php the_field('gutschein'); ?>); padding-bottom: 45.251%; background-size:contain;">
