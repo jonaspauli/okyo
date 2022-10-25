@@ -92,3 +92,5 @@ function register_acf_blocks() {
 
 
 };
+
+add_theme_support( 'custom-logo' );

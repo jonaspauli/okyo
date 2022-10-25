@@ -1,6 +1,8 @@
-<header class="banner">
+<header class="banner bg-okyo-black text-okyo-white">
   <a class="brand" href="{{ home_url('/') }}">
-    {!! $siteName !!}
+  <?php if ( function_exists( 'the_custom_logo' ) ) {
+	the_custom_logo();
+} ?>
   </a>
 
   @if (has_nav_menu('primary_navigation'))
