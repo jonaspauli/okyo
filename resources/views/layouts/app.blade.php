@@ -4,7 +4,7 @@
 
 @include('sections.header')
 
-  <main id="main" class="main bg-okyo-black text-okyo-white">
+  <main id="main" class="main bg-okyo-black text-okyo-white py-20">
     @yield('content')
   </main>
 
