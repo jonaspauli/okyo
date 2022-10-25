@@ -27,12 +27,12 @@ if ( ! empty( $block['align'] ) ) {
 }
 ?>
 
-<div class="textband my-40 z-10" speed=30>
+<div class="textband my-40 z-10" speed=10>
   <div class='scrolling-text'>
     <?php 
     $link = get_field('link');
     if( $link ): ?>
-     <a href="<?php echo esc_url( $link ) ?>" class="scrolling-text-content"><span><?php the_field('text') ?></span></h2></a>
+     <a href="<?php echo esc_url( $link ) ?>" class="scrolling-text-content"><span><?php the_field('text') ?></span></a>
      <?php endif; ?>
   </div>
 </div>

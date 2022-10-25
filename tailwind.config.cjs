@@ -18,6 +18,7 @@ module.exports = {
       spacing: {
         '75vh': '75vh',
         '128': '32rem',
+        '80vh' : '80vh',
       }
     },
   plugins: [
