@@ -1,0 +1,14 @@
+{
+    "name": "Overlapping Gallery",
+    "title": "gallery-overlap",
+    "description": "Overlapping Gallery Template",
+    "style": [ "file:../../resources/styles/blocks/gallery-overlap.css" ],
+    "category": "media",
+    "icon": "users",
+    "keywords": ["okyo", "gallery", "overlap"],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "../../resources/views/blocks/gallery-overlap.php"
+    },
+    "align": "full"
+}
