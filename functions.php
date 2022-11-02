@@ -89,9 +89,9 @@ function register_acf_blocks() {
     register_block_type( __DIR__ . '/blocks/quote' );
     register_block_type( __DIR__ . '/blocks/special-drinks' );
     register_block_type( __DIR__ . '/blocks/gallery-overlap' );
-
-
-
+    register_block_type( __DIR__ . '/blocks/news' );
 };
 
 add_theme_support( 'custom-logo' );
+
+add_filter( 'wpcf7_autop_or_not', '__return_false' );

@@ -1,0 +1,14 @@
+{
+    "name": "news",
+    "title": "OKYO News",
+    "description": "Template für News",
+    "style": [ "file:../../resources/styles/blocks/news.css" ],
+    "category": "media",
+    "icon": "users",
+    "keywords": ["okyo", "news", "posts"],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "../../resources/views/blocks/news.php"
+    },
+    "align": "full"
+}

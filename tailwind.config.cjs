@@ -19,10 +19,12 @@ module.exports = {
         '75vh': '75vh',
         '128': '32rem',
         '80vh' : '80vh',
+        '60vh' : '60vh',
       }
     },
+  },
   plugins: [
     require('@tailwindcss/forms'),
+    require('@tailwindcss/line-clamp'),
   ],
-}
 }
