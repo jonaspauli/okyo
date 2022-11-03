@@ -1,8 +1,8 @@
 {{--
-  Template Name: Restaurant
+  Template Name: Without Gap
 --}}
 
-@extends('layouts.app')
+@extends('layouts.app_tight')
 
 @section('content')
   @while(have_posts()) @php(the_post())

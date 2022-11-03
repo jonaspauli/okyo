@@ -43,12 +43,30 @@ if ( ! empty( $block['align'] ) ) {
             }
         ?>
             <div class="z-<?php echo $i ?>0 my-lg-4 mb-2 mb-lg-0 relative projekte-fade">
-                <a href="<?php the_sub_field('link') ?>">
-                    <div class="darken">
-                    <img src="<?php the_sub_field('image') ?>">
-                    </div>
-                    <p class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-2xl"><?php the_sub_field('text'); ?></p>
-                </a>
+            <?php 
+                    $link = get_sub_field('link');
+                    if( $link ): 
+                        $link_url = $link['url'];
+                        $link_title = $link['title'];
+                        $link_target = $link['target'] ? $link['target'] : '_self';
+                        ?>
+                        <a href="<?php echo esc_url( $link_url ); ?>">
+                            <div class="darken">
+                            <img src="<?php the_sub_field('image') ?>">
+                            </div>
+                            <p class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-2xl"><?php the_sub_field('text'); ?></p>
+                        </a>
+                    <?php endif; ?>
+                    <?php 
+                    $link = get_sub_field('link');
+                    if( !$link ): ?>
+                            <div class="darken">
+                            <img src="<?php the_sub_field('image') ?>">
+                            </div>
+                            <p class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-2xl"><?php the_sub_field('text'); ?></p>
+                    <?php endif; ?>
+            
+
             </div>
         </div>
             <?php $i++; ?>
