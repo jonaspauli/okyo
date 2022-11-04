@@ -107,19 +107,26 @@
   input[type="text"],
   input[type="email"],
   input[type="tel"],
+  input[type="date"],
     {
         height: 5rem;
         border: none;
         background-color: theme('colors.okyo-tinted');
         color: theme('colors.okyo-white');
         border-bottom: 1px solid #F3F1EC;
+        width: 48%;
+        margin-bottom: 1.25rem;
+        margin-right: 1.25rem;
     }
 
-    textarea
+textarea
     {
         border: none;
         background-color: theme('colors.okyo-tinted');
         color: theme('colors.okyo-white');
         border-bottom: 1px solid #F3F1EC;
+        width: 48%;
+        margin-bottom: 1.25rem;
+        margin-right: 1.25rem;
     }
 }
