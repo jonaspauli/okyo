@@ -1,4 +1,4 @@
-<header class="banner bg-okyo-black text-okyo-white flex h-20 items-center px-10">
+<header class="banner bg-okyo-black text-okyo-white flex py-10 items-center px-10">
   <div class="inline">
   <?php if ( function_exists( 'the_custom_logo' ) ) {
 	the_custom_logo();
