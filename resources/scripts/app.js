@@ -1,6 +1,6 @@
 import {domReady} from '@roots/sage/client';
 import {gsap} from 'gsap';
-import {ScrollTrigger} from 'gsap';
+import {ScrollTrigger} from 'gsap/ScrollTrigger.js';
 import $ from 'jquery';
 
 
@@ -175,48 +175,47 @@ $(document).ready(function() {
     }
 });
 
+/// Startseite
 
-/// Startseite Scroll
+gsap.registerPlugin(ScrollTrigger);
 
-const html = document.documentElement;
 const canvas = document.querySelector('.okyo-scrolling');
-const context = canvas.getContext('2d');
+const context = canvas.getContext("2d");
 
-const currentFrame = index => (
-    `@images/earth/earth_${index.toString().padStart(3, '0')}.jpg`
-)
-
-const frameCount = 131;
-
-canvas.height = 1080;
 canvas.width = 1920;
-const img = new Image();
-img.src = currentFrame(1);
-img.onload = function(){
-    context.drawImage(img, 0, 0)
-}
+canvas.height = 1080;
 
-const updateImage = index => {
-    img.src = currentFrame(index);
-    context.drawImage(img, 0, 0);
-}
+const frameCount = 296;
+const currentFrame = index => (
+    `anim/anim_${index.toString().padStart(3, '0')}.jpg`
+);
 
-window.addEventListener('scroll', () =>{
-    const scrollTop = html.scrollTop;
-    const maxScrollTop = html.scrollHeight - window.innerHeight;
-    const scrollFraction = scrollTop / maxScrollTop;
-    const frameIndex = Math.min(frameCount - 1, Math.floor(scrollFraction * frameCount))
-    
-    requestAnimationFrame( () => updateImage(frameIndex + 1))
-})
-
-const preloadImages = () => {
-    for (let i = 1; i < frameCount; i++) {
-        const img = new Image();
-        img.src = currentFrame(i);
-    }
+const images = []
+const okyoanim = {
+  frame: 0
 };
 
-preloadImages();
+for (let i = 0; i < frameCount; i++) {
+  const img = new Image();
+  img.src = currentFrame(i);
+  images.push(img);
+}
 
-/// Startseite Scroll ende
+gsap.to(okyoanim, {
+  frame: frameCount - 1,
+  pin: true,
+  snap: "frame",
+  ease: "none",
+  scrollTrigger: {
+    scrub: 0.2
+  },
+  onUpdate: render // use animation onUpdate instead of scrollTrigger's onUpdate
+});
+
+images[0].onload = render;
+
+function render() {
+  context.clearRect(0, 0, canvas.width, canvas.height);
+  context.drawImage(images[okyoanim.frame], 0, 0); 
+};
+
