@@ -14,14 +14,14 @@
             <main class="flex overflow-x-hidden hide-scroll-bar sticky top-10">
             <div class="inline-block px-3">
                     <div class="w-75vh h-80vh flex items-center flex-col justify-center">
-                            <h1><?php the_field('headline'); ?></h1>
-                            <h4><?php the_field('subhead'); ?></h4>
+                            <h1 class="anim-head"><?php the_field('headline'); ?></h1>
+                            <h4 class="anim-head"><?php the_field('subhead'); ?></h4>
                     </div>
                 </div>
     <?php while( have_rows('product') ) : the_row();
             $image = get_sub_field('image')
                 ?>
-                <div class="inline-block px-3">
+                <div class="inline-block px-3 fade">
                     <div class="w-75vh">
                     <?php if( !empty( $image ) ): ?>
                         <img class="object-cover h-80vh w-75vh" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />

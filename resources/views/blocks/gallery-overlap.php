@@ -28,7 +28,7 @@ if ( ! empty( $block['align'] ) ) {
 
 ?>
 
-<section class="container">
+<section class="container <?php echo $class_name ?>">
   <?php if( have_rows('gallery') ):
       $row = get_field('gallery');
       $i = 1;
@@ -42,7 +42,7 @@ if ( ! empty( $block['align'] ) ) {
             echo "<div class=\"w-1/2 mt-[15rem] ml-[-2rem] mb-[-10rem]\">";
             }
         ?>
-            <div class="z-<?php echo $i ?>0 my-lg-4 mb-2 mb-lg-0 relative projekte-fade">
+            <div class="z-<?php echo $i ?>0 my-lg-4 mb-4 mb-lg-0 relative projekte-fade gallery-rellax">
             <?php 
                     $link = get_sub_field('link');
                     if( $link ): 

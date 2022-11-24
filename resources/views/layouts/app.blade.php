@@ -6,6 +6,9 @@
 
   <main id="main" class="main bg-okyo-black text-okyo-white py-20">
     @yield('content')
+
+
+    <script src="https://cdn.jsdelivr.net/gh/dixonandmoe/rellax@master/rellax.min.js"></script>
   </main>
 
   @hasSection('sidebar')

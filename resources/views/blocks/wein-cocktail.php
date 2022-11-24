@@ -29,7 +29,7 @@ if ( ! empty( $block['align'] ) ) {
 <?php
 $cocktail = get_field('cocktail');
 if( $cocktail ): ?>
-<section class="flex flex-row justify-center mt-[-5rem]">
+<section class="flex flex-row justify-center mt-[-5rem] fade">
     <div class="flex flex-col cocktail">
         <div class="flip-card w-128 h-128">
         <div class="flip-card-inner ">

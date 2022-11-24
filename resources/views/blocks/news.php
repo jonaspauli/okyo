@@ -27,7 +27,7 @@ if ( ! empty( $block['align'] ) ) {
 }
 ?>
 
-<section class="pb-32">
+<section class="pb-32 <?php echo $class_name ?>">
     <div class="sticky-container">
       <main class="flex overflow-x-hidden hide-scroll-bar sticky top-10">
             <?php

@@ -7,8 +7,8 @@
 @section('content')
   @while(have_posts()) @php(the_post())
     @include('partials.page-header')
-    <h1><?php the_field('headline') ?></h1>
-<table class="mx-auto mb-20 mt-10">
+    <h1 class="anim-head"><?php the_field('headline') ?></h1>
+<table class="mx-auto mb-20 mt-10 fade">
   <?php
 // Check rows existexists.
 if( have_rows('karte') ): ?>
@@ -36,13 +36,13 @@ endif;
 // Check rows existexists.
 if( have_rows('karte') ): ?>
     <?php while( have_rows('karte') ) : the_row(); ?>
-          <h3 class="m-[-1.75rem]"><?php the_sub_field('name'); ?></h3>
-          <h4 class="text-center"><?php the_sub_field('uhrzeit'); ?></h4>
+          <h3 class="m-[-1.75rem] fade"><?php the_sub_field('name'); ?></h3>
+          <h4 class="text-center fade"><?php the_sub_field('uhrzeit'); ?></h4>
           <?php
               // Check rows existexists.
               if( have_rows('gang') ): ?>
                   <?php while( have_rows('gang') ) : the_row(); ?>
-                  <div class="container mt-20">
+                  <div class="container mt-20 fade">
                   <div class="flex flex-row">
                     <div class="basis-1/4">
                       <h4 class="uppercase tracking-wide"><?php the_sub_field('name'); ?></h4>

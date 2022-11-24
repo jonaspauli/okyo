@@ -30,6 +30,8 @@
   "dependencies": {
     "@marcreichel/apple-tv-card": "^1.0.2",
     "gsap": "^3.11.3",
-    "jquery": "^3.6.1"
+    "jquery": "^3.6.1",
+    "rellax": "^1.12.1",
+    "split-type": "^0.3.3"
   }
 }

@@ -1,8 +1,8 @@
 import {domReady} from '@roots/sage/client';
 import {gsap} from 'gsap';
-import {ScrollTrigger} from 'gsap/ScrollTrigger.js';
+import { ScrollTrigger } from 'gsap/ScrollTrigger.js';
 import $ from 'jquery';
-
+import SplitType from 'split-type';
 
 /**
  * app.main
@@ -23,6 +23,24 @@ const main = async (err) => {
  */
 domReady(main);
 import.meta.webpackHot?.accept(main);
+
+const myText = new SplitType('.anim-head');
+
+gsap.to('.char', {
+    y: 0,
+    stagger: 0.05,
+    delay: 0.2,
+    duration: .1
+});
+
+gsap.registerPlugin(ScrollTrigger);
+
+gsap.to ('.fade', {
+    ScrollTrigger: ".fade",
+    stagger: 0.3,
+    opacity: 1,
+    delay: 0.5,
+});
 
 /**
 * By Alvaro Trigo 
@@ -84,6 +102,24 @@ require('@marcreichel/apple-tv-card');
 // Textband
 
 $(document).ready(function() {
+    $('.gallery-rellax').each(function() {
+    
+        $(this).addClass("rellax");
+         $(this).attr({'data-rellax-speed' : (Math.random() * 2) - 1})
+        
+          });
+        
+          });
+        
+        
+         $(document).ready(function(){
+        
+         var rellax = new Rellax('.rellax', {
+        
+        
+          });
+
+
     var containers = $('.textband');
 
     if (containers.length) {
@@ -177,7 +213,6 @@ $(document).ready(function() {
 
 /// Startseite
 
-gsap.registerPlugin(ScrollTrigger);
 
 const canvas = document.querySelector('.okyo-scrolling');
 const context = canvas.getContext("2d");
@@ -218,4 +253,5 @@ function render() {
   context.clearRect(0, 0, canvas.width, canvas.height);
   context.drawImage(images[okyoanim.frame], 0, 0); 
 };
+
 
