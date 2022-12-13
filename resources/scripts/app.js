@@ -102,22 +102,7 @@ require('@marcreichel/apple-tv-card');
 // Textband
 
 $(document).ready(function() {
-    $('.gallery-rellax').each(function() {
     
-        $(this).addClass("rellax");
-         $(this).attr({'data-rellax-speed' : (Math.random() * 2) - 1})
-        
-          });
-        
-          });
-        
-        
-         $(document).ready(function(){
-        
-         var rellax = new Rellax('.rellax', {
-        
-        
-          });
 
 
     var containers = $('.textband');
@@ -210,6 +195,24 @@ $(document).ready(function() {
         })
     }
 });
+
+/// Rellax
+
+$('.gallery-rellax').each(function() {
+    
+    $(this).addClass("rellax");
+     $(this).attr({'data-rellax-speed' : (Math.random() * 2) - 1})
+    
+      });
+    
+    
+     $(document).ready(function(){
+    
+     var rellax = new Rellax('.rellax', {
+    
+    
+      });
+     });
 
 /// Startseite
 

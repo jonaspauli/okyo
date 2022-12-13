@@ -224,3 +224,7 @@ textarea
   flex-direction: row;
   flex-wrap: wrap;
 }
+
+input[data-name="WelchesEventPlanstdu[]"] {
+  width: 100%;
+} 
