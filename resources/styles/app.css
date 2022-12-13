@@ -228,3 +228,9 @@ textarea
 input[data-name="WelchesEventPlanstdu[]"] {
   width: 100%;
 } 
+
+.scrolling-text-content::before {
+  content: url(~@images/arrow.svg);
+  width: 2rem;
+  height: auto;
+}

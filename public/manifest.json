@@ -1,6 +1,6 @@
 {
-  "app.css": "css/app.7efd0b.css",
-  "app.js": "js/app.c5a0f3.js",
+  "app.css": "css/app.b0f5d3.css",
+  "app.js": "js/app.c7139d.js",
   "editor.css": "css/editor.31d6cf.css",
   "editor.js": "js/editor.6bb753.js",
   "runtime.js": "js/runtime.e55b78.js",
@@ -14,5 +14,6 @@
   "images/logo_hero.svg": "images/logo_hero.d539cb.svg",
   "images/.DS_Store": "images/.DS_Store.40d349",
   "images/logo.svg": "images/logo.0ad87a.svg",
+  "images/arrow.svg": "images/arrow.f4c2b1.svg",
   "images/.gitkeep": "images/.gitkeep.31d6cf"
 }

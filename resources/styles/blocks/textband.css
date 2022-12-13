@@ -20,3 +20,10 @@
   line-height: 1em;
   margin: 50px 0;
 }
+
+
+.scrolling-text-content::before {
+  content: url(~@images/arrow.svg);
+  width: 2rem;
+  height: auto;
+}
