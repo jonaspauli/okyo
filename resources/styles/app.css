@@ -138,6 +138,7 @@
   .gallery-image {
     scroll-snap-align: start;
   }
+  
 
   input[type="text"],
   input[type="email"],
@@ -145,14 +146,37 @@
   input[type="date"],
     {
         height: 5rem;
+        width: 100%;
         border: none;
         background-color: theme('colors.okyo-tinted');
         color: theme('colors.okyo-white');
         border-bottom: 1px solid #F3F1EC;
-        width: 48%;
         margin-bottom: 1.25rem;
-        margin-right: 1.25rem;
     }
+  input[type="file"] {
+    outline: none !important;
+    background: url(~@images/Upload.png);
+    width: 207px;
+    height: 72px;
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    vertical-align: center;
+    font-size: 0px;
+    box-shadow: none !important;
+    border: 0px;
+    display: inline-block;
+    margin: 1rem auto;
+  }
+
+  input[type="checkbox"]:checked, 
+  input[type="radio"]:checked,
+  input[type="checkbox"]:checked:focus, 
+  input[type="checkbox"]:checked:hover, 
+  input[type="radio"]:checked:focus, 
+  input[type="radio"]:checked:hover {
+    background: theme('colors.okyo-orange')
+  }
 
 textarea
     {
@@ -160,9 +184,9 @@ textarea
         background-color: theme('colors.okyo-tinted');
         color: theme('colors.okyo-white');
         border-bottom: 1px solid #F3F1EC;
-        width: 48%;
         margin-bottom: 1.25rem;
-        margin-right: 1.25rem;
+        width: 100%;
+        clear: none;
     }
 
   .char {
@@ -182,4 +206,21 @@ textarea
 
 .fade {
   opacity: 0;
+}
+
+.wpcf7-form-control-wrap {
+  height: 100%;
+  display: inline-block;
+  width: 49%;
+}
+
+.wpcf7-list-item {
+  display: block;
+}
+
+.wpcf7-form {
+  display: flex;
+  gap: 1rem;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
