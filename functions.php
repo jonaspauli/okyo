@@ -96,3 +96,8 @@ add_theme_support( 'custom-logo' );
 
 add_filter( 'wpcf7_autop_or_not', '__return_false' );
 
+function wpb_custom_new_menu() {
+    register_nav_menu('sub-menu',__( 'Sub Menu' ));
+    }
+    
+    add_action( 'init', 'wpb_custom_new_menu' );

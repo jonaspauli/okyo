@@ -75,6 +75,10 @@
     font-weight: 600;
     position: relative;
   }
+
+  a:hover, a:active, a:focus a:visited {
+    color: theme('colors.okyo-orange')
+  }
   .nav li {
     display: inline;
     margin-right: 1rem;
@@ -235,6 +239,10 @@ textarea
   flex-wrap: wrap;
 }
 
-input[data-name="WelchesEventPlanstdu[]"] {
-  width: 100%;
-} 
+
+.wp-block-table td, .wp-block-table th {
+border: 1px solid theme('colors.okyo-white');
+border-left: none;
+border-right: none;
+padding: 2rem;
+}
