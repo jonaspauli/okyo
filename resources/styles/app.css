@@ -76,13 +76,20 @@
     position: relative;
   }
 
-  a:hover, a:active, a:focus a:visited {
+  a:hover, a:active, a:focus {
     color: theme('colors.okyo-orange')
   }
-  .nav li {
+  .nav li,
+  .menu li {
     display: inline;
     margin-right: 1rem;
   }
+
+.menu-item a svg {
+    display: inline !important;
+  }
+
+
 
   header,
   footer {
