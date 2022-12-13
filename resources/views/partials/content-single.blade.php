@@ -1,6 +1,6 @@
 <article @php(post_class())>
   <header>
-    <h1 class="entry-title">
+    <h1 class="entry-title text-center">
       {!! $title !!}
     </h1>
 
@@ -14,6 +14,4 @@
   <footer>
     {!! wp_link_pages(['echo' => 0, 'before' => '<nav class="page-nav"><p>' . __('Pages:', 'sage'), 'after' => '</p></nav>']) !!}
   </footer>
-
-  @php(comments_template())
 </article>

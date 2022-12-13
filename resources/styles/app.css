@@ -95,6 +95,16 @@
     height: 100vh;
     object-fit: cover;
   }
+  
+  .entry-content p {
+    font-size: 1.25rem;
+    width: 66%;
+    margin: 0 auto;
+  }
+
+  .date {
+    font-size: 1.5rem;
+  }
 
   .scroll-wrap {
     height: 5000px;
@@ -228,9 +238,3 @@ textarea
 input[data-name="WelchesEventPlanstdu[]"] {
   width: 100%;
 } 
-
-.scrolling-text-content::before {
-  content: url(~@images/arrow.svg);
-  width: 2rem;
-  height: auto;
-}

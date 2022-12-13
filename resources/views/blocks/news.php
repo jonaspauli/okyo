@@ -44,7 +44,7 @@ if ( ! empty( $block['align'] ) ) {
         <article class="inline-block px-3">
             <div class="w-128">
             <div>
-                <?php the_post_thumbnail('full', ['class' => 'object-cover h-60vh w-128']); ?>
+                <a href="<?php echo get_permalink(); ?>"><?php the_post_thumbnail('full', ['class' => 'object-cover h-60vh w-128']); ?></a>
             </div>
             <div class="my-8 flex flex-col">
                 <?php echo get_the_date(); ?>
