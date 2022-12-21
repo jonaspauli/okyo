@@ -15,7 +15,7 @@
           <?php while( have_rows('callout_1') ): the_row(); 
                ?>
               <div class="flex content-center justify-center first-callout">
-                <h1 class="text-center tracking-tight text-4xl w-2/3 drop-shadow-lg"><?php the_sub_field('text'); ?></h1>
+                <h1 class="text-center tracking-tight w-2/3 drop-shadow-lg"><?php the_sub_field('text'); ?></h1>
               </div>
           <?php endwhile; ?>
       <?php endif; ?>
