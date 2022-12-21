@@ -11,7 +11,7 @@
     <?php if( have_rows('product') ): ?>
     <section> 
         <div class="sticky-container">
-            <main class="flex overflow-x-hidden hide-scroll-bar sticky top-10">
+            <main class="flex overflow-x-hidden hide-scroll-bar sticky top-28">
             <div class="inline-block px-3">
                     <div class="w-75vh h-80vh flex items-center flex-col justify-center">
                             <h1 class="anim-head"><?php the_field('headline'); ?></h1>

@@ -29,7 +29,7 @@ if ( ! empty( $block['align'] ) ) {
 
 <section class="pb-32 <?php echo $class_name ?>">
     <div class="sticky-container">
-      <main class="flex overflow-x-hidden hide-scroll-bar sticky top-10">
+      <main class="flex overflow-x-hidden hide-scroll-bar sticky top-28">
             <?php
         // Define our WP Query Parameters
         $the_query = new WP_Query( array(

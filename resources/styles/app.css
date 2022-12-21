@@ -58,6 +58,7 @@
     font-size: 7.5rem;
     letter-spacing: -0.5rem;
     font-weight: 500;
+    line-height: 7.5rem;
     z-index: 2;
     position: relative;
     text-align: center;
@@ -66,11 +67,13 @@
     font-size: 5rem;
     letter-spacing: -0.33rem;
     font-weight: 600;
+    line-height: 5rem;
     position: relative;
     text-align: center;
   }
   h4 {
     font-size: 1.25rem;
+    line-height: 1.25rem;
     letter-spacing: -0.1rem;
     font-weight: 600;
     position: relative;
@@ -218,6 +221,9 @@ textarea
 
 }
 
+.custom-logo {
+  width: 120px;
+}
 
 .word {
   padding-top: 1rem;

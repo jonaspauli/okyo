@@ -33,7 +33,7 @@ if ( ! empty( $block['align'] ) ) {
 if( have_rows('fam') ): ?>
     <section> 
         <div class="sticky-container">
-            <main class="flex overflow-x-hidden hide-scroll-bar sticky top-20">
+            <main class="flex overflow-x-hidden hide-scroll-bar sticky top-28">
     <?php while( have_rows('fam') ) : the_row();
             $image = get_sub_field('bild')
                 ?>
