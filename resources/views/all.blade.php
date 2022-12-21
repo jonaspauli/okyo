@@ -9,3 +9,4 @@
 <div class="inline-flex"></div>
 <div class="w-[49%]"></div>
 <div class="md:hidden"></div>
+<div class="sm:w-72"></div>

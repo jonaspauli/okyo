@@ -36,7 +36,7 @@ if ( ! empty( $block['align'] ) ) {
 <a href="<?php echo esc_url( $link_url ); ?>" target="<?php echo esc_attr( $link_target ); ?>">
 
     <div class="grid place-items-center">
-        <div class="w-8/12">
+        <div class="w-full sm:w-8/12">
             <div class="apple-tv-card-container" style="width:100%;">
                 <div class="apple-tv-card">
                     <div class="content" style="background-image:url(<?php the_field('gutschein'); ?>); padding-bottom: 45.251%; background-size:contain;">
@@ -44,7 +44,7 @@ if ( ! empty( $block['align'] ) ) {
                     </div>
                     <div class="parallax-content">
                     
-                            <a class="bg-okyo-orange text-okyo-black w-72 py-3 self-end mb-16 text-center" href="<?php echo esc_url( $link_url ); ?>" target="<?php echo esc_attr( $link_target ); ?>" style="font-size: 1rem"><?php echo esc_html( $link_title ); ?></a>
+                            <a class="hidden sm:block bg-okyo-orange text-okyo-black w-72 py-3 self-end mb-16 text-center" href="<?php echo esc_url( $link_url ); ?>" target="<?php echo esc_attr( $link_target ); ?>" style="font-size: 1rem"><?php echo esc_html( $link_title ); ?></a>
                     </div>
                 </div>
             </div>
