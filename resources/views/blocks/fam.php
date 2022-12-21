@@ -33,12 +33,12 @@ if ( ! empty( $block['align'] ) ) {
 if( have_rows('fam') ): ?>
     <section> 
         <div class="sticky-container">
-            <main class="flex overflow-x-scroll hide-scroll-bar sticky top-28">
+            <main class="flex overflow-x-hidden hide-scroll-bar flex-col sm:flex-row relative sm:sticky top-28">
     <?php while( have_rows('fam') ) : the_row();
             $image = get_sub_field('bild')
                 ?>
                 <div class="inline-block px-3">
-                    <div class="w-75vh">
+                    <div class="sm:w-75vh">
                     <?php if( !empty( $image ) ): ?>
                         <img class="object-cover h-80vh w-75vh" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
                     <?php endif; ?>

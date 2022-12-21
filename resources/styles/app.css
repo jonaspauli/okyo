@@ -278,5 +278,9 @@ padding: 2rem;
     font-size: 2.5rem;
     line-height: 2.5rem;
   }
+
+  .wpcf7-form-control-wrap {
+    width: 100%;
+  }
 }
 

@@ -42,12 +42,34 @@ gsap.to ('.fade', {
     delay: 0.5,
 });
 
+function is_touch_enabled() {
+    return ( 'ontouchstart' in window ) ||
+    ( navigator.maxTouchPoints > 0 ) ||
+    ( navigator.msMaxTouchPoints > 0 );
+}
+
+jQuery(document).ready(function($) {
+    var alterClass = function() {
+      var ww = document.body.clientWidth;
+      if ( is_touch_enabled() ) {
+        $('.sticky-container').attr('class', function() {
+            return $(this).attr('class').replace('sticky-container', 'non-sticky-container');
+        });
+      } 
+    };
+    $(window).resize(function(){
+      alterClass();
+    });
+    //Fire it when the page first loads:
+    alterClass();
+  });
+
 /**
 * By Alvaro Trigo 
 * Sidescroll
 * Follow me on Twitter: https://twitter.com/imac2
 */
-(function(){
+$(window).load(function(){
   init();
 
   var g_containerInViewport;
