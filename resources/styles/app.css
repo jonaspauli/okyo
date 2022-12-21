@@ -261,3 +261,22 @@ padding: 2rem;
 .menu-item a svg {
   display: inline !important;
 }
+
+.rmp_menu_trigger {
+  display: block !important;
+}
+
+@media (min-width: 1024px) { 
+  .rmp_menu_trigger {
+    display: none !important;
+  }
+ }
+
+
+@media (max-width: 640px) {
+  h1 {
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+  }
+}
+

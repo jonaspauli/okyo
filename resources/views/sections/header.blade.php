@@ -6,12 +6,12 @@
 </div>
 
   @if (has_nav_menu('primary_navigation'))
-    <nav class="nav-primary ml-20 grow" aria-label="{{ wp_get_nav_menu_name('primary_navigation') }}">
+    <nav class="nav-primary ml-20 grow hidden lg:block" aria-label="{{ wp_get_nav_menu_name('primary_navigation') }}">
       {!! wp_nav_menu(['theme_location' => 'primary_navigation', 'menu_class' => 'nav', 'echo' => false]) !!}
     </nav>
     
   @endif 
-  <div class="nav-secondary">
+  <div class="nav-secondary hidden lg:block">
   <?php wp_nav_menu( array( 'theme_location'=>'sub-menu', 'container_class'=>'sub-menu-class' ) ); ?>
 </div>
 

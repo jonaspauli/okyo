@@ -8,3 +8,4 @@
 <div class="mb-[-7rem]"></div>
 <div class="inline-flex"></div>
 <div class="w-[49%]"></div>
+<div class="md:hidden"></div>
