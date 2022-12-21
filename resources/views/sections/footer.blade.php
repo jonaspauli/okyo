@@ -9,8 +9,8 @@
         <p>Copyright © 2022 OKYO. All rights reserved.</p>
         </div>
         <div>
-            <a href="#">Impressum</a> | 
-            <a href="#">Datenschutz</a>
+            <a href="<?php echo get_site_url(); ?>/impressum">Impressum</a> | 
+            <a href="<?php echo get_site_url(); ?>/datenschutz">Datenschutz</a>
         </div>
     </div>
 </footer>
