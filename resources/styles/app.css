@@ -295,5 +295,9 @@ padding: 2rem;
   .wpcf7-form-control-wrap {
     width: 100%;
   }
+
+  .rellax { 
+    transform: translate3d(0,0,0) !important; 
+  }
 }
 

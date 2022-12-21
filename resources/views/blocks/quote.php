@@ -28,6 +28,6 @@ if ( ! empty( $block['align'] ) ) {
 ?>
 
 <section class="container my-40">
-    <div class="text-6xl text-center leading-snug"><?php the_field('zitat') ?></div>
+    <div class="text-2xl sm:text-6xl text-center leading-snug"><?php the_field('zitat') ?></div>
     <div class="text-sm font-bold text-center mt-6"><?php the_field('quelle') ?></div>
 </section>

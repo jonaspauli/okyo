@@ -37,9 +37,9 @@ if ( ! empty( $block['align'] ) ) {
         <?php while( have_rows('gallery') ): the_row();?>
         <?php
             if ($i % 2 != 0) {
-            echo "<div class=\"w-1/2 mr-[-2rem] mb-[-10rem]\">";
+            echo "<div class=\"w-full sm:w-1/2 sm:mr-[-2rem] sm:mb-[-10rem]\">";
             } else {
-            echo "<div class=\"w-1/2 mt-[15rem] ml-[-2rem] mb-[-10rem]\">";
+            echo "<div class=\"w-full sm:w-1/2 sm:mt-[15rem] sm:ml-[-2rem] sm:mb-[-10rem]\">";
             }
         ?>
             <div class="z-<?php echo $i ?>0 my-lg-4 mb-4 mb-lg-0 relative projekte-fade gallery-rellax">

@@ -44,3 +44,16 @@
     margin-left: -2rem;
     margin-top: 20rem;
   }
+
+
+
+  @media (max-width: 640px) {
+    .cocktail {
+      margin-right: 0;
+    }
+  
+    .wein {
+      margin-left: 0;
+      margin-top: 0;
+    }
+  }

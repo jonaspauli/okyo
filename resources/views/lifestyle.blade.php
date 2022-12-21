@@ -11,9 +11,9 @@
     <?php if( have_rows('product') ): ?>
     <section> 
         <div class="sticky-container">
-            <main class="flex overflow-x-hidden hide-scroll-bar sticky top-28">
-            <div class="inline-block px-3">
-                    <div class="w-75vh h-80vh flex items-center flex-col justify-center">
+            <main class="flex overflow-x-hidden flex-col sm:flex-row hide-scroll-bar relative sm:sticky sm:top-28">
+            <div class="inline-block sm:px-3">
+                    <div class="sm:w-75vh sm:h-80vh pb-10 sm:pb-0 flex items-center flex-col justify-center">
                             <h1 class="anim-head"><?php the_field('headline'); ?></h1>
                             <h4 class="anim-head"><?php the_field('subhead'); ?></h4>
                     </div>
@@ -21,8 +21,8 @@
     <?php while( have_rows('product') ) : the_row();
             $image = get_sub_field('image')
                 ?>
-                <div class="inline-block px-3 fade">
-                    <div class="w-75vh">
+                <div class="inline-block px-3 pb-10 sm:pb-0 fade">
+                    <div class="sm:w-75vh">
                     <?php if( !empty( $image ) ): ?>
                         <img class="object-cover h-80vh w-75vh" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
                     <?php endif; ?>
