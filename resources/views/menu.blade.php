@@ -36,7 +36,7 @@ endif;
 // Check rows existexists.
 if( have_rows('karte') ): ?>
     <?php while( have_rows('karte') ) : the_row(); ?>
-          <h3 class="m-[-1.75rem] fade"><?php the_sub_field('name'); ?></h3>
+          <h3 class="fade"><?php the_sub_field('name'); ?></h3>
           <h4 class="text-center fade"><?php the_sub_field('uhrzeit'); ?></h4>
           <?php
               // Check rows existexists.
