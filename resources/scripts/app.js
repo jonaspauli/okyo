@@ -48,7 +48,7 @@ function is_touch_enabled() {
     || (navigator.msMaxTouchPoints > 0);
 }
 
-jQuery(document).ready(($) => {
+$(document).ready(($) => {
   const alterClass = function () {
     const ww = document.body.clientWidth;
     if (is_touch_enabled()) {
