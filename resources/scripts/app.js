@@ -176,7 +176,7 @@ $(document).ready(() => {
 * By Alvaro Trigo
 * Sidescroll
 * Follow me on Twitter: https://twitter.com/imac2
-*/
+
 
 $(window).on('load', function() {
   init();
@@ -218,7 +218,7 @@ $(window).on('load', function() {
     }
   }
 });
-
+*/
 //  Startseite
 
 const canvas = document.querySelector('.okyo-scrolling');
