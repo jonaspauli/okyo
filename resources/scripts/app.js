@@ -42,7 +42,7 @@ gsap.to('.fade', {
   delay: 0.5,
 });
 
-function is_touch_enabled() {
+/**function is_touch_enabled() {
   return ('ontouchstart' in window)
     || (navigator.maxTouchPoints > 0)
     || (navigator.msMaxTouchPoints > 0);
@@ -63,6 +63,7 @@ $(document).ready(($) => {
   // Fire it when the page first loads:
   alterClass();
 });
+*/
 
 // Gutschein 3D
 
