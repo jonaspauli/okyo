@@ -1,12 +1,13 @@
 {
   "app": {
     "js": [
-      "js/runtime.8eb29a.js",
-      "js/829.ae864a.js",
-      "js/app.27ee44.js"
+      "js/runtime.e55b78.js",
+      "js/829.d66477.js",
+      "js/350.fb64d1.js",
+      "js/app.6796c4.js"
     ],
     "css": [
-      "css/app.37f4bb.css"
+      "css/app.e9054c.css"
     ],
     "dependencies": [
       "jquery"
@@ -14,9 +15,9 @@
   },
   "editor": {
     "js": [
-      "js/runtime.8eb29a.js",
-      "js/575.4b71f1.js",
-      "js/editor.6bb753.js"
+      "js/runtime.e55b78.js",
+      "js/829.d66477.js",
+      "js/editor.24cd29.js"
     ],
     "css": [
       "css/editor.31d6cf.css"
