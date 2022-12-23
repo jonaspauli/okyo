@@ -1,4 +1,3 @@
-
 .textband {
   position: relative;
   width: 100vw;
@@ -10,14 +9,19 @@
   transition: transform 0.5s cubic-bezier(0.23, 0.36, 0.28, 0.83);
   will-change: transform;
   backface-visibility: hidden;
-  margin: 1rem 0;
 }
 
 .scrolling-text .scrolling-text-content {
   color: #F3F1EC;
-  font-size: 120px;
+  font-size: 5rem;
   white-space: nowrap;
   transition: transform 0.5s cubic-bezier(0.23, 0.36, 0.28, 0.83);
   line-height: 1em;
   margin: 50px 0;
+}
+
+@media (max-width: 640px) {
+  .scrolling-text .scrolling-text-content {
+  font-size: 4rem;
+}
 }
