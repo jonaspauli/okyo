@@ -40,8 +40,9 @@
     --okyo-black: 15 11 0;
   }
   html {
-    height: 100vh;
+    min-height: 100vh;
     scroll-behavior: smooth;
+    background-color: theme(colors.okyo-black)
 }
   body {
     background-color: --okyo-black;
