@@ -7,6 +7,7 @@
 @section('content')
   @while(have_posts()) @php(the_post())
     @include('partials.page-header')
+    <div class="px-2 sm:px-0">
     <h1 class="anim-head"><?php the_field('headline') ?></h1>
 <table class="mx-auto mb-20 mt-10 fade">
   <?php
@@ -36,7 +37,7 @@ endif;
 // Check rows existexists.
 if( have_rows('karte') ): ?>
     <?php while( have_rows('karte') ) : the_row(); ?>
-          <h3 class="fade"><?php the_sub_field('name'); ?></h3>
+          <h2 class="fade mt-40 sm:mt-0"><?php the_sub_field('name'); ?></h2>
           <h4 class="text-center fade"><?php the_sub_field('uhrzeit'); ?></h4>
           <?php
               // Check rows existexists.
@@ -55,7 +56,7 @@ if( have_rows('karte') ): ?>
                                 <?php while( have_rows('gericht') ) : the_row(); ?>
                                   <div class="flex flex-row mb-10">
                                     <div class="sm:basis-3/4">
-                                      <p class="font-semibold text-3xl mb-3"><?php the_sub_field('name'); ?></p>
+                                      <p class="font-semibold text-2xl sm:text-3xl mb-3"><?php the_sub_field('name'); ?></p>
                                       <p class="leading-relaxed"><?php the_sub_field('zutaten'); ?></p>
                                     </div>
                                     <div class="sm:basis-1/4">
@@ -118,6 +119,7 @@ endif;
 
 ?>
 
+</div>
 
 
 

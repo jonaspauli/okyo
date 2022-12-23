@@ -8,7 +8,7 @@
   @while(have_posts()) @php(the_post())
     @include('partials.page-header')
     @include('partials.content-page')
-   
+    <div class="icon-scroll"></div>
     <div class="scroll-wrap">
      <canvas class="okyo-scrolling"></canvas>
     </div>

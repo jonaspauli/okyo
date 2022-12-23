@@ -29,7 +29,7 @@ if ( ! empty( $block['align'] ) ) {
 
 <section class="pb-32 <?php echo $class_name ?>">
     <div class="sticky-container">
-      <main class="flex overflow-x-hidden hide-scroll-bar sticky top-28">
+      <main class="flex overflow-x-hidden hide-scroll-bar flex-col sm:flex-row relative sm:sticky sm:top-28">
             <?php
         // Define our WP Query Parameters
         $the_query = new WP_Query( array(
@@ -42,7 +42,7 @@ if ( ! empty( $block['align'] ) ) {
         // Display the Post Title with Hyperlink
         ?>
         <article class="inline-block px-3">
-            <div class="w-128">
+            <div class="sm:w-128">
             <div>
                 <a href="<?php echo get_permalink(); ?>"><?php the_post_thumbnail('full', ['class' => 'object-cover h-60vh w-128']); ?></a>
             </div>
