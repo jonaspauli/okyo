@@ -197,27 +197,6 @@ var getActiveScrollingText = function(direction) {
 
 $(window).on('wheel', function(e) {
     var delta = e.originalEvent.deltaY;
-  console.log(delta);
-
-    // Skew on scroll
-    if (delta > 0) {
-        // going down
-        transformAmount += transformSpeed * transformDirection;
-        textband.find('.scrolling-text .scrolling-text-content').css('transform', 'skewX(10deg)');
-    }
-    else {
-        transformAmount -= transformSpeed * transformDirection;
-        textband.find('.scrolling-text .scrolling-text-content').css('transform', 'skewX(-10deg)');
-    }
-
-    
-    setTimeout(function(){
-        textband.find('.scrolling-text').css('transform', 'translate3d('+ transformAmount * -1 +'px, 0, 0)');
-    }, 10);
-    setTimeout(function() {
-        textband.find('.scrolling-text .scrolling-text-content').css('transform', 'skewX(0)');
-    }, 500)
-
     // Boundaries
     if (transformAmount < leftBound) {
         var activeText = getActiveScrollingText('left');
