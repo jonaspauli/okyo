@@ -200,7 +200,7 @@ $(document).ready(function() {
               }
           }
       
-          $(window).on('wheel', function(e) {
+          $(window).on('scroll', function(e) {
               var delta = e.originalEvent.deltaY;
               
               if (delta > 0) {

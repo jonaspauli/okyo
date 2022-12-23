@@ -55,7 +55,7 @@ if( have_rows('karte') ): ?>
                             if( have_rows('gericht') ): ?>
                                 <?php while( have_rows('gericht') ) : the_row(); ?>
                                   <div class="flex flex-row mb-10">
-                                    <div class="sm:basis-3/4">
+                                    <div class="sm:basis-3/4 w-full">
                                       <p class="font-semibold text-2xl sm:text-3xl mb-3"><?php the_sub_field('name'); ?></p>
                                       <p class="leading-relaxed"><?php the_sub_field('zutaten'); ?></p>
                                     </div>
