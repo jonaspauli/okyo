@@ -37,9 +37,9 @@ if ( ! empty( $block['align'] ) ) {
         <?php while( have_rows('gallery') ): the_row();?>
         <?php
             if ($i % 2 != 0) {
-            echo "<div class=\"w-full sm:w-1/2 sm:mr-[-2rem] sm:mb-[-10rem]\">";
+            echo "<div class=\"w-full sm:w-1/2 sm:mr-[-2rem]\">";
             } else {
-            echo "<div class=\"w-full sm:w-1/2 sm:mt-[15rem] sm:ml-[-2rem] sm:mb-[-10rem]\">";
+            echo "<div class=\"w-full sm:w-1/2 sm:mt-[15rem] sm:ml-[-2rem]\">";
             }
         ?>
             <div class="z-<?php echo $i ?>0 my-lg-4 mb-4 mb-lg-0 relative projekte-fade gallery-rellax">
@@ -50,7 +50,7 @@ if ( ! empty( $block['align'] ) ) {
                         $link_title = $link['title'];
                         $link_target = $link['target'] ? $link['target'] : '_self';
                         ?>
-                        <a href="<?php echo esc_url( $link_url ); ?>">
+                        <a href="<?php echo esc_url( $link_url ); ?>" class="hover:text-okyo-white">
                             <div class="darken">
                             <img src="<?php the_sub_field('image') ?>">
                             </div>
@@ -60,9 +60,7 @@ if ( ! empty( $block['align'] ) ) {
                     <?php 
                     $link = get_sub_field('link');
                     if( !$link ): ?>
-                            <div class="darken">
                             <img src="<?php the_sub_field('image') ?>">
-                            </div>
                             <p class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-2xl"><?php the_sub_field('text'); ?></p>
                     <?php endif; ?>
             
