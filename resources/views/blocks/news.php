@@ -42,7 +42,7 @@ if ( ! empty( $block['align'] ) ) {
         // Display the Post Title with Hyperlink
         ?>
         <article class="inline-block px-3">
-            <div class="sm:w-128">
+            <div class="pb-10 sm:w-128">
             <div>
                 <a href="<?php echo get_permalink(); ?>"><?php the_post_thumbnail('full', ['class' => 'object-cover h-60vh w-128']); ?></a>
             </div>

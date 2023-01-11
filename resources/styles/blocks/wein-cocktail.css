@@ -49,11 +49,12 @@
 
   @media (max-width: 640px) {
     .cocktail {
-      margin-right: 0;
+      margin: 0 auto;
+      padding-bottom: 2.5rem;
     }
   
     .wein {
-      margin-left: 0;
-      margin-top: 0;
+      margin: 0 auto;
+      padding-bottom: 2.5rem;
     }
   }
