@@ -27,7 +27,7 @@
             <div class="z-<?php echo $i ?>0 my-lg-4 mb-4 mb-lg-0 relative projekte-fade gallery-rellax">
             <?php $image = get_sub_field('image');#
         if( !empty( $image ) ): ?>
-          <img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" class="w-full" />
+          <img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" class="w-full fade" />
       <?php endif; ?>
             </div>
         </div>

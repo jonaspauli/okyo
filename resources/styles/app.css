@@ -56,10 +56,10 @@
     line-height: 8rem;
   }
   h2 {
-    font-size: 7.5rem;
-    letter-spacing: -0.5rem;
+    font-size: 4.5rem;
+    letter-spacing: -0.25rem;
     font-weight: 500;
-    line-height: 7.5rem;
+    line-height: 4.5rem;
     z-index: 2;
     position: relative;
     text-align: center;
