@@ -36,7 +36,7 @@
                         $link_title = $link['title'];
                         $link_target = $link['target'] ? $link['target'] : '_self';
                         ?>
-                        <a class="bg-okyo-orange text-okyo-black w-72 py-3 self-center mb-16 text-center" href="<?php echo esc_url( $link_url ); ?>" target="<?php echo esc_attr( $link_target ); ?>" style="font-size: 1rem"><?php echo esc_html( $link_title ); ?></a>
+                        <a class="bg-okyo-orange text-okyo-black w-72 py-3 self-center mb-16 text-center hover:bg-okyo-tinted" href="<?php echo esc_url( $link_url ); ?>" target="<?php echo esc_attr( $link_target ); ?>" style="font-size: 1rem"><?php echo esc_html( $link_title ); ?></a>
                     <?php endif; ?>
                   
               </div>
@@ -59,7 +59,7 @@
                         $link_title = $link['title'];
                         $link_target = $link['target'] ? $link['target'] : '_self';
                         ?>
-                        <a class="bg-okyo-orange text-okyo-black w-72 py-3 self-center mb-16 text-center" href="<?php echo esc_url( $link_url ); ?>" target="<?php echo esc_attr( $link_target ); ?>" style="font-size: 1rem"><?php echo esc_html( $link_title ); ?></a>
+                        <a class="bg-okyo-orange text-okyo-black w-72 py-3 self-center mb-16 text-center hover:bg-okyo-tinted" href="<?php echo esc_url( $link_url ); ?>" target="<?php echo esc_attr( $link_target ); ?>" style="font-size: 1rem"><?php echo esc_html( $link_title ); ?></a>
                     <?php endif; ?>
               </div>
             </div>
