@@ -79,7 +79,7 @@ if( have_rows('karte') ): ?>
                <?php
                             $textband = get_field('textband');
                             if( $textband ): ?>
-                            <div class="textband my-20 sm:my-40" speed=10>
+                            <div class="textband my-20 sm:my-40" speed=2>
                               <div class='scrolling-text'>
                                 <a href="<?php echo esc_url( $textband['link']['url'] ); ?>" class="scrolling-text-content"><span><?php echo $textband['text']; ?></span></h2></a>
                               </div>
