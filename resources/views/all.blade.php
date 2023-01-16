@@ -10,3 +10,5 @@
 <div class="w-[49%]"></div>
 <div class="md:hidden"></div>
 <div class="sm:w-72"></div>
+<div class="mb-2"></div>
+<div class="sm:w-2/3"></div>
