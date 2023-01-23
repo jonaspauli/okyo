@@ -7,7 +7,7 @@
     "icon": "users",
     "keywords": ["okyo", "gallery", "overlap"],
     "acf": {
-        "mode": "preview",
+        "mode": "edit",
         "renderTemplate": "../../resources/views/blocks/gallery-overlap.php"
     },
     "align": "full"

@@ -7,7 +7,7 @@
     "icon": "users",
     "keywords": ["hero", "logo", "okyo"],
     "acf": {
-        "mode": "preview",
+        "mode": "edit",
         "renderTemplate": "../../resources/views/blocks/hero-bg-image.php"
     },
     "align": "full"

@@ -7,7 +7,7 @@
     "icon": "users",
     "keywords": ["okyo", "fam", "mitarbeiter"],
     "acf": {
-        "mode": "preview",
+        "mode": "edit",
         "renderTemplate": "../../resources/views/blocks/special-drinks.php"
     },
     "align": "full"

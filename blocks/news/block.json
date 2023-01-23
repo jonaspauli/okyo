@@ -7,7 +7,7 @@
     "icon": "users",
     "keywords": ["okyo", "news", "posts"],
     "acf": {
-        "mode": "preview",
+        "mode": "edit",
         "renderTemplate": "../../resources/views/blocks/news.php"
     },
     "align": "full"

@@ -2,9 +2,8 @@
   "app": {
     "js": [
       "js/runtime.e55b78.js",
-      "js/829.d66477.js",
-      "js/350.fb64d1.js",
-      "js/app.f44f4d.js"
+      "js/829.fc1242.js",
+      "js/app.cedaf5.js"
     ],
     "css": [
       "css/app.cab7a6.css"
@@ -16,14 +15,15 @@
   "editor": {
     "js": [
       "js/runtime.e55b78.js",
-      "js/829.d66477.js",
-      "js/editor.24cd29.js"
+      "js/829.fc1242.js",
+      "js/editor.aa1614.js"
     ],
     "css": [
-      "css/editor.31d6cf.css"
+      "css/editor.15ee21.css"
     ],
     "dependencies": [
-      "wp-blocks"
+      "wp-blocks",
+      "jquery"
     ]
   }
 }

@@ -7,8 +7,10 @@
     "icon": "users",
     "keywords": ["okyo", "fam", "mitarbeiter"],
     "acf": {
-        "mode": "preview",
+        "mode": "edit",
         "renderTemplate": "../../resources/views/blocks/fam.php"
     },
-    "align": "full"
+    "align": "full",
+    "mode": "edit"
 }
+

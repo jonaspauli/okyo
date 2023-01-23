@@ -7,7 +7,7 @@
     "icon": "users",
     "keywords": ["okyo", "quote", "Zitate"],
     "acf": {
-        "mode": "preview",
+        "mode": "edit",
         "renderTemplate": "../../resources/views/blocks/quote.php"
     },
     "align": "full"
